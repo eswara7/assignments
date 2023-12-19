@@ -5,6 +5,14 @@
 */
 
 function isAnagram(str1, str2) {
+  str3 = str1.split("").sort().join("")
+  str4= str2.split("").sort().join('')
+  if(str3==str4){
+    return true
+  }
+  else{
+    return false
+  }
 
 }
 
