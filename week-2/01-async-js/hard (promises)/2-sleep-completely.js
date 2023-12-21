@@ -31,3 +31,13 @@ function sleep(milliseconds){
 sleep(5000).then(()=>{console.log("sleep is over")})
 // if then(log("sleep is over")) it prints it so i have to perform a funciton it runs after resolve 
 //then() method is used to attach a callback that will be executed when the Promise is fulfilled.
+
+
+
+function sleep(millisec){
+    return new Promise(function(resolve));
+    setTimeout(resolve,milliseconds)
+}
+sleep(1000).then(()=>{
+    console.log("sleep is over");
+})

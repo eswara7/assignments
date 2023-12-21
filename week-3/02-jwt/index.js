@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const jwtPassword = "secret";
 
 function signJwt(username, password) {
+    jwt.signin()
 
 }
 
